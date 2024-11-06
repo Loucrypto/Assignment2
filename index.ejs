@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jordy Alec Havyarimana</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+
+    <!-- Smooth scrolling CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nav bar --> 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navigation Links in HTML -->
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house-lock"></i> Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#about"><i class="fa-solid fa-person"></i> About Me</a>
+    </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#projects"><i class="fa-brands fa-r-project"></i> Projects</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#contact"><i class="fa-solid fa-phone-volume"></i> Contact Me</a>
+    </li>
+</ul>
+
+        </div>
+    </div>
+</nav>
+    
+
+
+
+
+    <!-- Sections with IDs for in-page scrolling -->
+    <section id="home">
+        <h1> My Portfolio</h1>
+        <p> Hi! I am Michael and Welcome to my Personal Portfolio</p>
+    </section>
+
+    <!-- to add a line to show a clear separation between the pages -->
+    <hr class="section-divider">
+
+
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="/images/My Picture.jpg" alt="This is me !" width="550px">
+        <p> Hi, my name is Michael Louise Melchor aka Lou, and my hobbies are playing sports such as basketball and volleyball!</p>
+
+        <!--This part is for my video-->
+        <video width="200" height="300" controls>
+            <source src="/images/My Video.mp4" type="video/mp4">
+
+        </video>
+        <p>^</p>
+        <p>This is me playing volleyball :></p>
+     </section>
+
+    <!-- to add a line to show a clear separation between the pages -->
+    <hr class="section-divider">
+
+
+    <section id="projects">
+        <h1>My Personal Projects</h2>
+        <ul>
+            <h2><li> English Ted Talk project</li></h2>
+            <p> During this project I talked about why I wanted to become a cybersecuity engineer and some details about the job. Also During this project I try to make my speech convincing so that others would want to do it aswell. </p>
+            <h2><li>Car wash Fundraiser  </li></h2>
+            <p>In highschool I built a team to help raise awarness for cancer patients creating a drive thru carwash.  </p>
+            <h2><li>Song Writing</li></h2>
+            <p>For this project I had to create a song of any genre and then perform it infront of others and the teacher. I ended up makeing a catchy love song which strcuk the heart of other students.</p>
+       
+        </ul>
+        
+
+    </section>
+
+    <!-- to add a line to show a clear separation between the pages -->
+    <hr class="section-divider">
+
+
+    <section id="contact">
+        <!-- This section is the main content area for the contact form of the Conatact page-->
+        <h1>Contact</h1>
+        <!--The form for the contac-->
+        <form action="submit_form.php"method="post">
+            <!--For user name-->
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <!-- For user email-->
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <!--For user Phone number-->
+            <input type="tel" id="phone" name="phone" placeholder="Your phone" required>
+            <!--Text area for user comments or message-->
+            <textarea id="comments" name="comments"placeholder="Your Message"></textarea>
+            <!--Button to Submit Form-->
+            <button type="Submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Contact: michaellouise.melchor@ontariotechu.net
+        </p>
+        <p>
+            &copy; 2024 Michael Louise Melchor
+        </p>
+    </footer>
+
+
+<script src="/jquery/dist/jquery.min.js"></script> 
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script> 
+<script src="/Scripts/apps.js"></script> <!-- Custom JavaScript file -->
+
+</body>
+</html>
